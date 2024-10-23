@@ -1,0 +1,29 @@
+body {
+    background-color: #f0f8ff; /* Fondo blanco con un toque de celeste */
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #007bff; /* Color celeste */
+  }
+  
+  .dashboard-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-container {
+    margin-bottom: 40px;
+  }
+  
+  .chart-container canvas {
+    background-color: #f0f8ff; /* Fondo celeste suave en los gráficos */
+    border-radius: 8px;
+  }
+  

@@ -1,0 +1,76 @@
+/* Main dashboard container */
+.dashboard-wrapper {
+    padding: 10px;
+    background-color: #f4f4f4;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Dashboard title */
+.dashboard-title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Grid container for the charts */
+.dashboard-grid {
+    display: grid;
+    width: 90%;
+    max-width: 1200px; /* Corrected from 12000px to 1200px */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+    gap: 20px;
+}
+
+/* Individual chart card */
+.chart-card {
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 350px;
+}
+
+/* Chart title */
+.chart-title {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #444;
+    text-align: center;
+}
+
+/* Chart container */
+.chart-container {
+    width: 100%;
+    height: 180px; /* Set a smaller height for better fit */
+    position: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .dashboard-grid {
+        grid-template-columns: 3fr; /* Stack in one column */
+    }
+
+    .chart-container {
+        height: 150px; /* Adjust height if necessary */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .dashboard-grid {
+        grid-template-columns: repeat(2, 4fr); /* 2 columns for medium screens */
+    }
+
+    .chart-container {
+        height: 320px; /* Adjust height if necessary */
+    }
+}
