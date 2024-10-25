@@ -17,7 +17,16 @@ const lineData = {
         fill: true,
     }],
 };
-
+const lineData1 = {
+    labels: ["2019","2020","2021","2022","2023","2024"],
+    datasets: [{
+        label: 'Sales 2024',
+        data: [300, 400, 500, 700, 800,1100],
+        borderColor: 'rgba(75, 192, 192, 1)',
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        fill: true,
+    }],
+};
 const lineOptions = {
     responsive: true,
     maintainAspectRatio: false,  // Ensures the chart adjusts to the container
@@ -63,7 +72,7 @@ const SalesDashboard = () => {
             <div className="dashboard-grid">
                 {/* Line Chart 1 */}
                 <div className="chart-card">
-                    <h3 className="chart-title">Ventas Anuales</h3>
+                    <h3 className="chart-title">Ventas mensuales Año actual</h3>
                     <div className="chart-container">
                         <Line data={lineData} options={lineOptions} />
                     </div>
@@ -71,9 +80,9 @@ const SalesDashboard = () => {
                 
                 {/* Line Chart 2 */}
                 <div className="chart-card">
-                    <h3 className="chart-title">Ventas Mensuales</h3>
+                    <h3 className="chart-title">Ventas anuales</h3>
                     <div className="chart-container">
-                        <Line data={lineData} options={lineOptions} />
+                        <Line data={lineData1} options={lineOptions} />
                     </div>
                 </div>
                 
