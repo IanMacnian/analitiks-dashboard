@@ -26,4 +26,13 @@ body {
     background-color: #f0f8ff; /* Fondo celeste suave en los gráficos */
     border-radius: 8px;
   }
+  .map-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 100px solid #ccc;
+  }
+  
+  .map-container h2 {
+    margin-bottom: 10px;
+  }
   
